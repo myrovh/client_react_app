@@ -1,0 +1,22 @@
+{
+  "name": "client_react_app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/myrovh/client_react_app.git",
+  "author": "myrovh <myrovh@yandex.com>",
+  "license": "MIT",
+  "xo": {
+    "semicolon": false
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "husky": "^0.13.3",
+    "xo": "^0.18.2"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "test": "xo",
+    "precommit": "yarn test"
+  }
+}
