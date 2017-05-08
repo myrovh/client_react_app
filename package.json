@@ -10,12 +10,16 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "husky": "^0.13.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
     "xo": "^0.18.2"
   },
   "scripts": {
-    "start": "babel-node src/index.js",
+    "start": "webpack-dev-server --progress",
     "test": "xo",
     "precommit": "yarn test"
   }
