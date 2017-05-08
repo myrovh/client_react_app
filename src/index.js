@@ -1,5 +1,9 @@
-const Dog = require('./dog')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app'
+import {APP_CONTAINER_ID} from './config'
 
-const toby = new Dog('Toby')
-
-console.log(toby.bark())
+ReactDOM.render(
+	<App/>,
+	document.getElementById(APP_CONTAINER_ID)
+)

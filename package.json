@@ -6,13 +6,23 @@
   "author": "myrovh <myrovh@yandex.com>",
   "license": "MIT",
   "xo": {
-    "semicolon": false
+    "env": [
+      "browser"
+    ],
+    "semicolon": false,
+    "esnext": true,
+    "parser": "babel-eslint",
+    "extends": "xo-react"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-xo-react": "^0.11.1",
+    "eslint-plugin-react": "^7.0.0",
     "husky": "^0.13.3",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
@@ -22,5 +32,9 @@
     "start": "webpack-dev-server --progress",
     "test": "xo",
     "precommit": "yarn test"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }
